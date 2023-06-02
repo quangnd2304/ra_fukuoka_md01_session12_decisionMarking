@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh điều kiện if..elseif...else</title>
+</head>
+
+<body>
+    <script>
+        // Nhập vào 1 số, in ra số đó là số chẵn hay lẻ
+        let number = Number(prompt("Nhập vào 1 số"));
+
+        if (number % 2 == 0) {
+            console.log("Số vừa nhập là số chẵn");
+        } else {
+            console.log("Số vừa nhập là số lẻ");
+        }
+        // In ra số dư trong phép chia 3
+        // 3 trường hợp - 3 nhánh: 1 if, 1 elseif , 1 else    
+        if (number % 3 == 0) {
+            console.log("Số vừa nhập chia hết cho 3");
+        } else if (number % 3 == 1) {
+            console.log("Số vừa nhập chia 3 dư 1");
+        } else {
+            console.log("Số vừa nhập chia 3 dư 2");
+        }
+        // In ra số dư trong phép chia 4
+        // 4 trường hợp: 1 if, 2 else if, 1 else
+        if (number % 4 == 0) {
+            console.log("Số vừa nhập chia hết cho 4");
+        } else if (number % 4 == 1) {
+            console.log("Số vừa nhập chia 4 dư 1");
+        } else if (number % 4 == 2) {
+            console.log("Số vừa nhập chia 4 dư 2");
+        } else {
+            console.log("Số vừa nhập chia 4 dư 3");
+        }
+        // Bài tập 1: Sử dụng câu lệnh điều kiện if, nhập vào 1 số từ bàn phím,
+        //in số dư trong phép chia 8
+        // Bài tập 2: Sử dụng câu lênh if, xây dựng bài toán tính vé xe bus
+        /*
+            - Tuổi nhỏ hơn 6: miễn phí vé xe
+            if(age<6) -> case 0: case 1: ....case 5:
+            - Tuổi từ 6 đến 18: giá vé 5000
+            - Tuổi từ 18 đến 60: giá vé 10000
+            - Tuổi lớn hơn hoặc bằng 60: Miễn phí vé xe
+        */
+
+    </script>
+</body>
+
+</html>

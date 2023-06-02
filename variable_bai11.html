@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11</title>
+</head>
+
+<body>
+    <script>
+        /*
+            input: number1, number2, number3
+            process: 
+                B1: min = number1
+                B2: min>number2 -> min = number2
+                B3: min>number3 -> min = number3
+            output: min, max
+        */
+        //B1: Nhập vào 3 số number1,number2,number3 - prompt
+        let number1 = Number(prompt("Nhập vào số thứ nhất"));
+        let number2 = Number(prompt("Nhập vào số thứ hai"));
+        let number3 = Number(prompt("Nhập vào số thứ ba"));
+        // B2: Tìm ra số min
+        let min = number1;
+        // Nếu min > number2 thì đặt lại min = number2
+        min = (min > number2) ? number2 : min;
+        min = (min > number3) ? number3 : min;
+        // B3: In ra giá trị nhỏ nhất trong 3 số
+        console.log("Giá trị nhỏ nhất trong 3 số là:", min);
+        // B4: Tìm ra số max
+        let max = number1;
+        // max = (max < number2) ? number2 : max;
+        // max = (max < number3) ? number3 : max;
+        max = (max < number2) ? number2 : ((max < number3) ? number3 : max);
+        console.log("Giá trị lớn nhất trong 3 số là:", max);
+
+    </script>
+</body>
+
+</html>

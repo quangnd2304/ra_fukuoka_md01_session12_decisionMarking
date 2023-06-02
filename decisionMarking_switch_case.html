@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh switch...case</title>
+</head>
+
+<body>
+    <script>
+        // Nhập vào 1 số từ 0-9, phiên âm số đó
+        let number = Number(prompt("Nhập vào một số từ 0-9"));
+        switch (number) {
+            // if(number == 0)
+            case 0:
+                console.log("Không");
+                break;
+            //else if(number==1)
+            case 1:
+                console.log("Một");
+                break;
+            case 2:
+                console.log("Hai");
+                break;
+            case 3:
+                console.log("Ba");
+                break;
+            case 4:
+                console.log("Bốn");
+                break;
+            case 5:
+                console.log("Năm");
+                break;
+            case 6:
+                console.log("Sáu");
+                break;
+            case 7:
+                console.log("Bảy");
+                break;
+            case 8:
+                console.log("Tám");
+                break;
+            default:
+                console.log("Chín");
+        }
+        // Bài tập: Nhập vào 2 số từ bàn phím và các phép tính (+,-,*,/,%),
+        //in ra kết quả của các phép tính
+        //number1 = 10, number2 = 5, phép tính "/"--> result: 2
+        /*
+            input: number1, number2, phepTinh
+            process:
+                switch(phepTinh)
+                    case "+":
+                        result = number1+number2;
+                        break;
+                    case "-"
+                    case "*"
+            output: result
+        */
+        // Bước 1: Nhập vào 2 số và phép tính
+        let number1 = Number(prompt("Nhập vào số thứ nhất"));
+        let number2 = Number(prompt("Nhập vào số thứ hai"));
+        let phepTinh = prompt("Nhap vào phép tính");
+        // Bước 2: Tính kết quả khi thực hiện phép tính
+        // let result = expression
+        let result;
+        switch (phepTinh) {
+            case "+":
+                result = number1 + number2;
+                break;
+            case "-":
+                result = number1 - number2;
+                break;
+            case "*":
+                result = number1 * number2;
+                break;
+            case "/":
+                result = number1 / number2;
+                break;
+            default:
+                result = number1 % number2;
+        }
+        // Bước 3: in ra kết quả phép tính
+        console.log("Kết quả của phép tính là:", result);
+
+    </script>
+</body>
+
+</html>

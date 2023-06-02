@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 13</title>
+</head>
+
+<body>
+    <script>
+        /*
+            input: number
+            process:
+                B1: remainder=(number%3==0)?0:((number%3==1)?1:2)
+            output: remainder
+        */
+        // Bước 1: Nhập vào 1 số
+        let number = Number(prompt("Nhập vào 1 số"));
+        // Bước 2: tìm số dư
+        let remainder = (number % 3 == 0) ? 0 : ((number % 3 == 1) ? 1 : 2);
+        // Bước 3: In ra số dư
+        console.log("Số dư trong phép chia 3: ", remainder);
+    </script>
+</body>
+
+</html>
